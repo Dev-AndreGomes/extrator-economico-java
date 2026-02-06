@@ -49,5 +49,27 @@ O projeto segue a filosofia de sistemas **ETL (Extract, Transform, Load)**:
 
 1. **Clone o repositório**:
    ```bash
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPO.git](https://github.com/SEU_USUARIO/NOME_DO_REPO.git)
-   cd NOME_DO_REPO
+   git clone https://github.com/Dev-AndreGomes/extrator-economico-java.git
+
+2. **Suba o banco de dados**:
+   ```bash
+   docker-compose up -d
+
+3. **Execute a aplicação Java**:
+   ```bash
+   ./mvnw spring-boot:run
+
+**Verifique os dados**: Conecte-se ao banco via DBeaver ou qualquer cliente SQL usando:
+
+**Host**: localhost | **Porta**: 5432 | **Database**: economia_db
+
+## 📅 Roadmap de Desenvolvimento
+
+[x] **Fase 1: Ingestão (Java)** - Extração e carga em banco relacional.
+
+[ ] **Fase 2: Analytics (Python)** - Limpeza, tratamento de outliers e médias móveis com Pandas.
+
+[ ] **Fase 3: Business Intelligence (Power BI)** - Criação de dashboards dinâmicos e análise de tendências.
+
+✒️ Autor
+André Gomes - (https://www.linkedin.com/in/andregomesdossantosfilho/)
